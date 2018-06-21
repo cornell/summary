@@ -78,10 +78,12 @@ Examine une valeur et détermine son type:
 @[8-9]
 @[11-12]
 @[14-16]
-@[17-19]
-@[21-23]
-@[25-27]
-@[29-30]
+@[18-20]
+@[22-24]
+@[26-28]
+@[30-31]
+
+---
 
 #### Objects
 
@@ -102,6 +104,8 @@ Examine une valeur et détermine son type:
     > 42
 ```
 
+---
+
 ##### Arrays
 
 un 'array' est un 'object' spécial.
@@ -121,13 +125,13 @@ une 'function' est un 'object' spécial.
 ##### Function Scopes
 
 ###### Hoisting
-
+---
 #### Strict Mode
 
 ```js
     'use strict';
 ```
-
+---
 #### Functions as values
 
 ```js
