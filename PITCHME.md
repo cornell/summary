@@ -23,6 +23,8 @@
 
 ### Chapter 2 : Into Javascript
 
+---
+
 #### Values & types
 
 * string
@@ -31,6 +33,8 @@
 * null and undefined
 * object
 * symbol (new to ES6)
+
+---
 
 ##### typeof
 
@@ -41,38 +45,46 @@ Examine une valeur et détermine son type:
     typeof a;
     > "undefined"
 ```
+---
 ```js
     typeof "coucou"
     > "string"
 ```
+---
 ```js
     typeof 42
     > "number"
 ```
+---
 ```js
     typeof true;
     > "boolean"
 ```
+---
 ```js
     var a = null;
     typeof a;
     > "object"
 ```
+---
 ```js
     var a = undefined;
     typeof a;
     > "undefined"
 ```
+---
 ```js
     var a = { "key": value };
     typeof a
     > "object"
 ```
+---
 ```js
     var a = [];
     typeof a;
     > "object"
 ```
+---
 ```js
     typeof(function() {});
     > "function"
