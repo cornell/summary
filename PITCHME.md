@@ -19,8 +19,8 @@
     > 301.6"
 ```
 @[1-2]
-@[3-4]
-@[5-6]
+@[4-5]
+@[6-7]
 ---
 ### Chapter 2 : Into Javascript
 ---
@@ -144,7 +144,7 @@ une 'function' est un 'object' spécial.
     // ..
     };
 ```
-
+---
 ##### Immediately Invoked Function Expressions (IIFEs)
 
 ```js
@@ -152,7 +152,7 @@ une 'function' est un 'object' spécial.
         
     })();
 ```
-
+Note:
 Because an IIFE is just a function, and functions create variable scope, using an IIFE in this fashion is often used to declare variables that won’t affect the surrounding code outside the IIFE:    
 
 ```js
@@ -170,15 +170,16 @@ IIFEs can also have return values:
     var x = (function IIFE(){
         return 42;
     })();
-    
+
     > x; 
     > 42
 ```
-
+Note:
 The 42 value gets returned from the IIFE -named function being executed, and is then assigned to x.
 
+---
 #### Closure
-
+Note:
 closure as a way to “remember” and continue to
 access a function’s scope (its variables) even once the function has finished running.
 
@@ -193,5 +194,3 @@ access a function’s scope (its variables) even once the function has finished 
         return add;
     }
 ```
-
----
