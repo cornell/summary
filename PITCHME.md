@@ -40,32 +40,40 @@ Examine une valeur et détermine son type:
     var a;
     typeof a;
     > "undefined"
-
+```
+```js
     typeof "coucou"
     > "string"
-
+```
+```js
     typeof 42
     > "number"
-
+```
+```js
     typeof true;
     > "boolean"
-
+```
+```js
     var a = null;
     typeof a;
     > "object"
-
+```
+```js
     var a = undefined;
     typeof a;
     > "undefined"
-
+```
+```js
     var a = { "key": value };
     typeof a
     > "object"
-
+```
+```js
     var a = [];
     typeof a;
     > "object"
-
+```
+```js
     typeof(function() {});
     > "function"
 ```
