@@ -155,9 +155,10 @@ une 'function' est un 'object' spécial.
 ```
 
 Note:
-Because an IIFE is just a function, and functions create variable scope, using an IIFE in this fashion is often used to declare variables that won’t affect the surrounding code outside the IIFE:    
+Because an IIFE is just a function, and functions create variable scope, 
+using an IIFE in this fashion is often used to declare variables that won’t affect the surrounding code outside the IIFE
 
-
+---
 ```js
     var a = 42;
     (function IIFE(){
@@ -167,7 +168,7 @@ Because an IIFE is just a function, and functions create variable scope, using a
     console.log( a ); // 42
 ```
 ---
-IIFEs can also have return values:
+IIFEs can also have return values
 
 ```js
     var x = (function IIFE(){
@@ -184,11 +185,6 @@ The 42 value gets returned from the IIFE -named function being executed, and is 
 ---
 #### Closure
 
-Note:
-closure as a way to “remember” and continue to
-access a function’s scope (its variables) even once the function has finished running.
-
-
 ```js
     function makeAdder(x) {
         // parameter `x` is an inner variable
@@ -200,3 +196,6 @@ access a function’s scope (its variables) even once the function has finished 
         return add;
     }
 ```
+Note:
+closure as a way to “remember” and continue to
+access a function’s scope (its variables) even once the function has finished running.
