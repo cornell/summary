@@ -34,11 +34,7 @@
 * symbol (new to ES6)
 
 ---
-
 ##### typeof
-
-Note:
-Examine une valeur et détermine son type
 
 ```js
     var a;
@@ -84,6 +80,9 @@ Examine une valeur et détermine son type
 @[22-24]
 @[26-28]
 @[30-33]
+
+Note:
+Examine une valeur et détermine son type
 ---
 #### Objects
 
@@ -114,7 +113,7 @@ un 'array' est un 'object' spécial.
 ##### Functions
 
 une 'function' est un 'object' spécial.
-
+<!-- 
 #### Built-in Type methods
 
 #### Comparing Values
@@ -126,6 +125,7 @@ une 'function' est un 'object' spécial.
 ##### Function Scopes
 
 ###### Hoisting
+-->
 ---
 #### Strict Mode
 
@@ -163,7 +163,7 @@ using an IIFE in this fashion is often used to declare variables that won’t af
     var a = 42;
     (function IIFE(){
         var a = 10;
-        console.log( a ); // > 10
+        console.log(a);
     })();
 
     > 10
