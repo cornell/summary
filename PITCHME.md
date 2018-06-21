@@ -174,11 +174,13 @@ IIFEs can also have return values:
     > x; 
     > 42
 ```
+
 Note:
 The 42 value gets returned from the IIFE -named function being executed, and is then assigned to x.
 
 ---
 #### Closure
+
 Note:
 closure as a way to “remember” and continue to
 access a function’s scope (its variables) even once the function has finished running.
