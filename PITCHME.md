@@ -9,22 +9,21 @@
 #### toFixed() function
 
 ```js
-    301.597.toFixed()
-    "302"
+    > 301.597.toFixed()
+    > "302"
 
-    301.597.toFixed(2)
-    "301.60"
+    > 301.597.toFixed(2)
+    > "301.60"
 
-    301.597.toFixed(1)"
-    301.6"
+    > 301.597.toFixed(1)"
+    > 301.6"
 ```
-
+@[1-2]
+@[3-4]
+@[5-6]
 ---
-
 ### Chapter 2 : Into Javascript
-
 ---
-
 #### Values & types
 
 * string
@@ -59,18 +58,20 @@ Examine une valeur et détermine son type:
     > "object"
 
     var a = undefined;
-    typeof a;
+    > typeof a;
     > "undefined"
 
     var a = { "key": value };
-    typeof a
+    > typeof a
     > "object"
 
     var a = [];
-    typeof a;
+    > typeof a;
     > "object"
 
-    typeof(function() {});
+    typeof(function() {        
+        // code
+    });
     > "function"
 ```
 @[1-3]
@@ -81,10 +82,8 @@ Examine une valeur et détermine son type:
 @[18-20]
 @[22-24]
 @[26-28]
-@[30-31]
-
+@[30-33]
 ---
-
 #### Objects
 
 ```js
@@ -92,20 +91,21 @@ Examine une valeur et détermine son type:
         age: 42,
     };
 
-    obj.a;
+    > obj.a;
     > 42
 
-    obj['a'];
+    > obj['a'];
     > 42
 
     var property = 'age';
-    obj[property]
-
+    > obj[property]
     > 42
 ```
-
+@[1-3]
+@[5-6]
+@[8-9]
+@[11-13]
 ---
-
 ##### Arrays
 
 un 'array' est un 'object' spécial.
@@ -170,7 +170,9 @@ IIFEs can also have return values:
     var x = (function IIFE(){
         return 42;
     })();
-    x; // 42
+    
+    > x; 
+    > 42
 ```
 
 The 42 value gets returned from the IIFE -named function being executed, and is then assigned to x.
