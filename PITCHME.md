@@ -37,6 +37,7 @@
 
 ##### typeof
 
+Note:
 Examine une valeur et détermine son type:
 
 ```js
@@ -152,6 +153,7 @@ une 'function' est un 'object' spécial.
         
     })();
 ```
+
 Note:
 Because an IIFE is just a function, and functions create variable scope, using an IIFE in this fashion is often used to declare variables that won’t affect the surrounding code outside the IIFE:    
 
@@ -163,7 +165,7 @@ Because an IIFE is just a function, and functions create variable scope, using a
     })();
     console.log( a ); // 42
 ```
-
+---
 IIFEs can also have return values:
 
 ```js
