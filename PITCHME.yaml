@@ -1,2 +1,6 @@
-transition : zoom
+published : true
+theme : black
+transition : fade
 mousewheel : true
+slide-number : true
+footnote : "© KYLE SIMPSON, You don't known JS"
