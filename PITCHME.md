@@ -163,13 +163,14 @@ using an IIFE in this fashion is often used to declare variables that won’t af
     var a = 42;
     (function IIFE(){
         var a = 10;
-        console.log( a ); // 10
+        console.log( a ); // > 10
     })();
-    console.log( a ); // 42
+
+    > 10
+    > a
+    > 42
 ```
 ---
-IIFEs can also have return values
-
 ```js
     var x = (function IIFE(){
         return 42;
@@ -180,6 +181,7 @@ IIFEs can also have return values
 ```
 
 Note:
+IIFEs can also have return values
 The 42 value gets returned from the IIFE -named function being executed, and is then assigned to x.
 
 ---
