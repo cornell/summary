@@ -1,1 +1,2 @@
-transition : fade
+transition : zoom
+mousewheel : true
